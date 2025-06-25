@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -6,7 +7,7 @@ export default {
 		"./pages/**/*.{ts,tsx}",
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
-		"./src/**/*.{ts,tsx}",
+		"src/**/*.{ts,tsx}",
 	],
 	prefix: "",
 	theme: {
@@ -61,7 +62,30 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Brand colors
+				'brand-blue': 'rgb(0, 34, 55)',
+				'brand-light-blue': 'rgb(169, 218, 255)',
+				'brand-coral': 'rgb(255, 154, 132)',
+				'brand-white': 'rgb(255, 255, 255)',
+				'brand-light-gray': 'rgb(249, 249, 249)'
+			},
+			fontFamily: {
+				'news-plantin': ['"News Plantin"', 'serif'],
+				'sans': ['Inter', 'sans-serif']
+			},
+			fontSize: {
+				'hero': ['72px', { lineHeight: '1.1' }],
+				'heading-lg': ['64px', { lineHeight: '1.1' }],
+				'heading-md': ['48px', { lineHeight: '1.2' }],
+				'body-lg': ['18px', { lineHeight: '1.6' }],
+				'body-md': ['16px', { lineHeight: '1.6' }],
+				'body-sm': ['14px', { lineHeight: '1.5' }]
+			},
+			spacing: {
+				'section': '130px',
+				'section-sm': '48px',
+				'card-gap': '24px'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +108,22 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out'
 			}
 		}
 	},
