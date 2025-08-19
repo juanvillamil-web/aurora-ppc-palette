@@ -31,10 +31,19 @@ const HeroSection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-brand-coral hover:bg-brand-coral/90 text-brand-blue font-semibold px-8 py-4 text-lg">
+              <Button 
+                size="lg" 
+                className="bg-brand-coral hover:bg-brand-coral/90 text-brand-blue font-semibold px-8 py-4 text-lg"
+                onClick={() => (window as any).gtag_report_conversion()}
+              >
                 Start 14-Day Free Trial
               </Button>
-              <Button size="lg" variant="outline" className="border-brand-light-blue text-brand-light-blue hover:bg-brand-light-blue hover:text-brand-blue px-8 py-4 text-lg">
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="border-brand-light-blue text-brand-light-blue hover:bg-brand-light-blue hover:text-brand-blue px-8 py-4 text-lg"
+                onClick={() => (window as any).gtag_report_conversion()}
+              >
                 Watch Demo
               </Button>
             </div>

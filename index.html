@@ -30,6 +30,25 @@
 
       gtag('config', 'AW-10941931813');
     </script>
+    
+    <!-- Event snippet for contact conversion page -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-10941931813/CUkgCMHq04kbEKXCwuEo',
+          'value': 1.0,
+          'currency': 'COP',
+          'transaction_id': '',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
   </head>
 
   <body>
