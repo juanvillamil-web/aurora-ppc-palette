@@ -64,11 +64,11 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				// Brand colors
-				'brand-blue': 'rgb(0, 34, 55)',
-				'brand-light-blue': 'rgb(169, 218, 255)',
-				'brand-coral': 'rgb(255, 154, 132)',
-				'brand-white': 'rgb(255, 255, 255)',
-				'brand-light-gray': 'rgb(249, 249, 249)'
+				'brand-blue': 'hsl(194, 100%, 11%)',
+				'brand-light-blue': 'hsl(206, 100%, 83%)',
+				'brand-coral': 'hsl(11, 100%, 76%)',
+				'brand-white': 'hsl(0, 0%, 100%)',
+				'brand-light-gray': 'hsl(0, 0%, 98%)'
 			},
 			fontFamily: {
 				'news-plantin': ['"News Plantin"', 'serif'],
